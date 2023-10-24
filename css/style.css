@@ -1,0 +1,53 @@
+body {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo{
+    width: 200px;
+    height: 100px;
+    background: url(../img/white.png);
+    background-size: cover;
+    margin: 0 auto;
+}
+
+
+.intro {
+    text-align: center;
+    
+}
+
+.intro_text {
+    font-size: 5rem;
+    color: #FFF;
+    text-shadow: 0px 0px 10px #FFF;
+
+    /* Apply the animation */
+    animation: intro_text 3s ease infinite; /* Change the duration (3s) and timing function (ease) as needed */
+}
+
+@keyframes intro_text {
+    0% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-5%);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+#time-counter {
+    font-size: 2rem;
+    color: #FFF;
+    margin-top: 10px;
+}
